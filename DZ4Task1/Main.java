@@ -11,30 +11,30 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        // создала объект класса PrintPlaner
+        // создал объект класса PrintPlaner
         // отвечает за форматированеи файла csv и вывод в консоль планера
         PrintPlaner printPlaner = new PrintPlaner();
         ArrayList<String> planer = printPlaner.planerArrayList();
         ArrayList<String[]> planerSplite = printPlaner.planerSplite(planer);
 
-        // создала объект класса PrintTaskInPlaner
+        // создал объект класса PrintTaskInPlaner
         // отвечает за вывод задач опередленного уровня
         PrintTaskInPlaner printTaskInPlaner = new PrintTaskInPlaner(planerSplite);
 
-        // создала объект класса AddTask
+        // создал объект класса AddTask
         // отвечает за добавление задачи в csv файл
         AddTask addTask = new AddTask();
 
-        // создала объект класса Talking
+        // создал объект класса Talking
         // отвечает за прием данных от пользователя
         Talking ask = new Talking();
 
         Scanner in = new Scanner(System.in);
 
-        // вывела на экран первый диалог
+        // вывел на экран первый диалог
         ask.firstQuestion();
 
-        // считала, что ввел поьлзователь
+        // считал, что ввел пользователь
         int chois = in.nextInt();
         if (chois == 1) { // "1. Распечатать планер"
             printPlaner.printPlaner(planerSplite);
@@ -43,7 +43,7 @@ public class Main {
             // вопрос о том, какого уровня задачи нужн овывести
             ask.choisTask();
             int choisTask = in.nextInt();
-            // запустила метод в классе PrintTaskInPlaner,
+            // запустил метод в классе PrintTaskInPlaner,
             // отвечающий за вывод зада определенного уровня
             printTaskInPlaner.printTask(choisTask);
 

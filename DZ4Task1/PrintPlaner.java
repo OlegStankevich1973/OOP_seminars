@@ -9,6 +9,7 @@ public class PrintPlaner {
 
     ArrayList<String> planer = new ArrayList<>();
     ArrayList<String[]> planerSplite = new ArrayList<>();
+    private Scanner file;
 
     public PrintPlaner() {
 
@@ -17,7 +18,7 @@ public class PrintPlaner {
     // метод переброса csv файла в ArrayList
     public ArrayList<String> planerArrayList() throws IOException {
         FileReader inFile = new FileReader("DZ4Task1/planer.csv");
-        Scanner file = new Scanner(inFile);
+        file = new Scanner(inFile);
 
         while (file.hasNextLine()) {
             String line = file.nextLine();
