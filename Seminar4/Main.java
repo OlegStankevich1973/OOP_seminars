@@ -4,7 +4,7 @@ public class Main {
 
         System.out.println("Среднее значение " + integerArrays.avg());
 
-        Arrays<Double> doubleArrays = new Arrays<>(1.0, 2.0, 3.0, 4.0, 5.0);
+        Arrays<Double> doubleArrays = new Arrays<>(1.0, 6.0, 3.0, 4.0, 5.0);
 
         System.out.println("Среднее значение " + doubleArrays.avg());
 
