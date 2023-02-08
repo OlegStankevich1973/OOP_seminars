@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "DZ7.Main",
+            "projectName": "OOP_seminar_d3f39f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "DZ7.SRC.Main",
+            "projectName": "OOP_seminar_d3f39f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "DZ6.Main",
             "projectName": "OOP_seminar_d3f39f36"
         },
